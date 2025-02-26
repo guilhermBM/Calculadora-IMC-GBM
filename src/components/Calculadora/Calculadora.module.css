@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--corBody);
+    display: block;
+    height: 100vh;
+}
+
+.formulario-container {
+    background-color: var(--corPrimaria);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: var(--corTitulo);
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-size: 16px;
+    color: var(--corHeaderLabel);
+    text-align: left;
+}
+
+input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid var(--corHeaderInput);
+    border-radius: 5px;
+}
+
+input:focus {
+    border-color: var(--corHeaderInputFocus);
+    outline: none;
+}
+
+button {
+    background-color:var(--corBtn);
+    color: var(--corPrimaria);
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--corBtnHover);
+}
+
+button:active {
+    background-color: var(--corBtnActive);
+}
